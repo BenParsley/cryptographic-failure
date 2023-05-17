@@ -1,0 +1,113 @@
+.login-section{
+    background: rgb(238,241,250);
+    background: linear-gradient(180deg, rgba(238,241,250,1) 30%, rgba(201,198,155,1) 90%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top: 300px;
+}
+
+.login-text{
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.login-subtext{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-subtext-link{
+    font-weight: bolder;
+    padding-left: 5px;
+    color: orange;
+    text-decoration: none;
+}
+
+.login-content{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: auto;
+    width: 20%;
+    height: 62%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.signup-content{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: auto;
+    width: 20%;
+    height: 68%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.login-form{
+    text-decoration: none;
+    height: 80%;
+    padding: 10px 40px 40px 40px;
+    display: block;
+}
+
+
+
+
+.login-username-text, .login-password-text{
+    padding: 0px;
+    font-size: 12px;
+    text-align: left !important;
+    margin-bottom: 0.2rem;
+}
+
+.login-username, .login-password{
+    width: 90%;
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 15px;;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.login-username-shorter{
+    width: 60%;
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 15px;;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.login-username:focus, .login-password:focus{
+    outline: none;
+}
+
+.login-button{
+    box-shadow: 2px 4px black;
+    color: white !important;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: orange;
+    padding: 15px 0px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.login-button:hover{
+    background-color: orange !important;
+    transition: 0.3s;
+    transform: scale(1.05,1.05);
+}
+
+.signup-text{
+    text-align: center;
+    padding-top: 25px;
+}

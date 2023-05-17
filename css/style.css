@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+.invisible{
+  position: relative;
+  bottom: 150px;
+}
+
+.text-bold{ 
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.text-bold:hover{
+  cursor: pointer;
+  font-size: 18px;
+  text-shadow: 2px 2px orange;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-italics{
+  font-style: oblique;
+}
+
+.test-lowercasde{
+  text-transform: lowercase;
+}
+
+
+
+/*****************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+*****************************************************************/
+
+.header-section {
+  background-color: #EEF1FA;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-section.menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Header top customization */
+.header-top {
+  padding: 15px 0;
+  border-bottom: 1px solid black;
+}
+
+.header-section.menu-fixed .header-top {
+  display: none;
+}
+
+/* Email symbol within top header */
+.header-top-left i {
+  color: black;
+  margin-right: 5px;
+}
+
+
+/* Language selection within top header */
+.language-part {
+  margin-right: 15px;
+  position: relative;
+}
+
+
+/* Language world emoji */
+.language-part i {
+  color: black;
+}
+
+
+/* Drop down arrow within Language selection */
+.language-part::before {
+  position: absolute;
+  content: "\f107";
+  top: 2px;
+  right: 0;
+  color: black;
+  font-family: 'FontAwesome';
+}
+
+
+/* Drop down menu within Language selection */
+.language-part select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px solid #e5e5e5;
+  text-overflow: '';
+  padding-right: 15px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Clickable email link */
+.header-top-left a,
+.header-top-left select {
+  color: black;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px
+}
+
+.header-top-left select {
+  border: none;
+  background-color: transparent;
+}
+
+/* Force certain elements to have a transparent background */
+.transparent--header {
+  background-color: transparent;
+}
+.transparent--header .header-top {
+  background-color: transparent;
+}
+.transparent--header .header-bottom {
+  background-color: transparent;
+}
+
+
+/* Bottom Header Transparent */
+.header-bottom {
+  background-color: transparent;
+}
+
+.navbar{
+  padding: 0;
+  background-color: #EEF1FA;
+  float: right !important;
+}
+
+
+/* Dropdown item for navbar elements  that include children - specifically the down arrow */
+li.menu_has_children:after {
+  position: absolute;
+  content: "\f107";
+  top: 30px;
+  right: 5px;
+  color: #333745;
+  font-family: 'FontAwesome';
+  z-index: -10;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+
+/* Changing the rotation of the down arrow for navbar elements when opened */
+li.menu_has_children:hover:after {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
+/* The li elements within the bottom header */
+.main-menu li {
+  font-weight: 500 !important;
+  position: relative;
+}
+
+/* Styling of the a elements within bottom header */
+.main-menu li a {
+  text-transform: uppercase;
+  padding: 29px 25px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Poppins';
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+/* Change color of a elements when on hover */
+.main-menu li.active > a,
+.main-menu li a:hover {
+  color: orange;
+}
+
+.main-menu > li:last-child a {
+  padding-right: 0;
+}
+
+/* Sub menu that is summoned when clicking on elements that have a sub menu */
+.sub-menu {
+  position: absolute;
+  left: 20px;
+  top: 125%;
+  -webkit-box-shadow: 0px 18px 54px -8px rgba(0,0,0,0.15);
+  box-shadow: 0px 18px 54px -8px rgba(0,0,0,0.15);
+  width: 235px;
+  z-index: 999;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  border: 3px solid black;
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 0;
+}
+
+
+/* Show the submenu when hovering over parent elements */
+.main-menu li:hover > .sub-menu {
+  background-color: white;
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Create a small line between each child element within submenu */
+.sub-menu li + li {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Change the styling and positioning of sub elements */
+.sub-menu li a {
+  background-color: white;
+  padding: 10px 30px;
+  display: block;
+  color: black;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* When hoving sub elements, add a hover affect that makes it clearer for user */
+.sub-menu li a:hover {
+  color: black;
+  background-color: orange;
+}
+
+.sub-menu li.menu_has_children:after {
+  position: absolute;
+  content: "\f105";
+  top: 6px;
+  right: 30px;
+}
+
+.sub-menu li .sub-menu {
+  position: absolute;
+  top: 0;
+  left: 95%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.sub-menu li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  left: 100%;
+  top: 0;
+}
+
+/* Header hamburger for smaller devices*/
+.navbar-toggler {
+  background-color: purple;
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  border: none;
+}
+
+.menu-toggle {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 20px;
+  background: transparent;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  color: black;
+  font-size: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.menu-toggle:before, .menu-toggle:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #000;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: -webkit-transform 0.25s ease-in-out;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  -moz-transition: -webkit-transform 0.25s ease-in-out;
+  -ms-transition: -webkit-transform 0.25s ease-in-out;
+}
+
+span.is-active {
+  border-color: transparent;
+}
+span.is-active:before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+span.is-active:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+span.menu-toggle:hover {
+  color: #ffb606;
+}
+span.is-active {
+  border-color: transparent;
+}
+span.is-active:before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+span.is-active:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Header Login Button*/
+.header-join-part button,
+.header-join-part .cmn-btn {
+  font-weight: 500;
+  margin-left: 39px;
+  margin-top: 15px;
+  padding: 12px 45px;
+  background-color: rgb(255, 255, 255) !important;
+  border: 1px solid black !important;
+  color: black;
+
+}
+
+/* Header Login Button on Hover*/
+.header-join-part button:hover{
+  color: black;
+  background-color: orange !important;
+  transition: 0.3s;
+  transform:scale(1.1,1.1);
+}
+
+/*****************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+*****************************************************************/
+
+.banner-selection {
+  z-index: 10;
+  background-color: #EEF1FA;
+  position: relative;
+}
+
+.banner-elements-image {
+  position: absolute;
+  top:10%;
+  right: 0;
+  text-align: right;
+}
+
+.banner-content-area {
+  position: relative;
+  height: 100vh;
+  padding-top: 310px;
+}
+
+.banner-sub-title {
+  color: black;
+  text-shadow: 2px 2px orange;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.banner-title {
+  font-size: 80px;
+  text-shadow: 2px 2px orange;
+  text-transform: uppercase;
+}
+
+.position-fix{
+  padding-top: 38px ;
+}
+
+
+
+.anim-bounce {
+  animation: anim-bounce 3s linear infinite;
+}
+@keyframes anim-bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.banner-text-content{
+  position: relative;
+  z-index: 20;
+}
+
+.behind-content{
+  position: relative;
+  bottom: 220px;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.arrow-down{
+  width: 100%;
+  font-size: 32px;
+  position: relative;
+  bottom: 180px;
+  transition: 0.3s;
+}
+
+.icon{
+  color: white;
+  text-shadow: 0px 0px 25px black;
+  transition: 0.3s;
+}
+
+.arrow-down .icon:hover{
+  color: orange;
+  cursor: pointer;
+}
+
+
+/*****************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+*****************************************************************/
+
+
+
+.section-one{
+  padding: 15vh 0;
+  text-align: center;
+  background: rgb(238,241,250);
+  background: linear-gradient(180deg, rgba(238,241,250,1) 0%, rgba(180,183,190,1) 100%);
+}
+
+
+
+.smaller-container{
+  width: 54% !important;
+}
+
+.medium-container{
+  width: 74% !important;
+}
+
+.menu-pos-fix{
+  padding-top: 40px;
+}
+
+.menu-item{
+  padding: 8px 0;
+  width: 100%;
+  border: none;
+  border-radius: 75px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  transition: 0.3s;
+  font-weight: 400;
+}
+
+
+.menu-item:hover{
+  background: orange;
+  transform:scale(1.1,1.1);
+  -webkit-transform:scale(1.1, 1.1);
+  -moz-transform:scale(1.1, 1.1);
+}
+
+.menu-item-wip{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.section-text{
+  text-transform: uppercase;
+}
+
+.section-one-sub-title{
+  color: black;
+  font-family: 'Poppins';
+}
+
+.section-one-title{
+  font-family: 'Poppins';
+  font-size: 3vw;
+  color: black;
+  text-shadow: 2px 2px orange;
+}
+
+
+/*****************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+*****************************************************************/
+
+.section-heading{
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px orange;
+}
+
+.section-subcategory{
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+/*****************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+*****************************************************************/
+
+
+
+.section-two{
+  padding-top: 40px;
+  background: rgb(180,183,190);
+  background: linear-gradient(180deg, rgba(180,183,190,1) 0%, rgba(255,235,202,1) 50%);
+}
+
+.plaintext-ciphertext-section{
+  padding-bottom: 35px;
+}
+
+.plaintext-image{
+  padding: 15px;
+  margin-top: 15px;
+  background-color: rgba(248, 162, 0, 0.1);
+  border: 1px solid black;
+  border-radius: 25px;
+  background-image: url(../img/plaintext/plaintext-hidden.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.plaintext-image:hover{
+  background-color: rgba(248, 162, 0, 0.3);
+}
+
+.ciphertext-image{
+  padding: 15px;
+  margin-top: 15px;
+  background-color: rgba(248, 162, 0, 0.1);
+  border: 1px solid black;
+  border-radius: 25px;
+  background-image: url(../img/ciphertext/ciphertext-hidden.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ciphertext-image:hover{
+  background-color: rgba(248, 162, 0, 0.3);
+}
+
+
+.inside-folder{
+  transition: all 0.5s ease-in-out ;
+  opacity: 0;
+}
+
+.inside-folder:hover{
+  opacity: 100%;
+}
+
+/*****************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+*****************************************************************/
+
+.section-three{
+  background: rgb(255,235,202);
+  background: linear-gradient(180deg, rgba(255,235,202,1) 0%, rgba(196,214,255,1) 90%);
+}
+
+.section-single-image{
+  padding-top: 25px;
+  text-align: center;
+}
+
+.section-image-text{
+  padding-top:20px;
+  font-style: oblique;
+}
+
+
+/*****************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+*****************************************************************/
+
+.wip{
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*****************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+******************************************************************
+*****************************************************************/
+
+.search-area{
+  z-index: 10;
+  margin-top: -130px;
+  position: relative;
+}
+
+.search-wrapper{
+  padding: 30px 50px;
+  background-color: white;
+  border-radius: 1000px;
+  box-shadow: 0px 5px 5px 0px rgba(248,161,0,0.6);
+}
+
+.search-form{
+  display: flex;
+  flex-wrap: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form button{
+  width: 195px;
+  height: 50px;
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 999px;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.search-text{
+  width: 100%;
+  border: none;
+  margin-right: 50px;
+  border-bottom: 1px solid gray;
+}
+
+.search-text:hover{
+  outline-width: 0;
+}
+
+.main-content{
+  background-color: #EEF1FA;
+}
