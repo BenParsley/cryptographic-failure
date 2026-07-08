@@ -2,8 +2,6 @@
 
 An interactive, responsive single-page web application designed to educate developers, students, and security enthusiasts on foundational cryptography concepts, common cryptographic failures, and corresponding mitigation strategies.
 
----
-
 ## Table of Contents
 - [Features](#features)
 - [Vulnerabilities Explained](#vulnerabilities-explained)
@@ -12,8 +10,6 @@ An interactive, responsive single-page web application designed to educate devel
 - [File Structure](#file-structure)
 - [Author](#author)
 - [License](#license)
-
----
 
 ## Features
 
@@ -28,8 +24,6 @@ An interactive, responsive single-page web application designed to educate devel
   - Sticky scrolling headers and fluid intersection-observer entrance animations.
   - Fully responsive design compatible with desktop and mobile screens.
 
----
-
 ## Technologies Used
 
 - **HTML5 & CSS3**: Core semantic structure and layout styling.
@@ -37,8 +31,6 @@ An interactive, responsive single-page web application designed to educate devel
 - **jQuery**: Simple event delegation, modal logic triggering, and DOM traversal.
 - **Font Awesome**: Modern vector icons for buttons and lists.
 - **Vanilla JavaScript**: SPA router, IntersectionObserver animations, glossary tooltips, custom scroll behaviors, and static authentication simulation.
-
----
 
 ## Vulnerabilities Explained
 
@@ -57,8 +49,6 @@ This project breaks down several high-profile cryptographic mistakes and securit
 11. **Predictable IVs in CBC Mode**: Using static or predictable Initialization Vectors in block ciphers.
 12. **Insufficient Entropy**: Generating values using poor random sources that expose patterns.
 
----
-
 ## Getting Started
 
 Since this is a client-side static web application, there are no database or backend servers to configure. You can run it instantly.
@@ -69,8 +59,6 @@ Since this is a client-side static web application, there are no database or bac
    git clone https://github.com/yourusername/cryptographic-failure.git
    ```
 2. Double-click `index.html` to open the website directly in any modern browser (Chrome, Firefox, Safari, Edge).
-
----
 
 ## File Structure
 
@@ -92,11 +80,6 @@ cryptographic-failure/
 ├── README.md                # Project documentation
 ├── index.html               # Main entry point (SPA views)
 └── profile.html             # Profile mockup page
-```
-
----
-
----
 
 ## License
 
