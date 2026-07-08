@@ -1,4 +1,7 @@
 # Cryptographic Failure Education Tool 2023
+
+![Splash Screen](screenshots/Splashscreen.png)
+
 An interactive, responsive single-page web application designed to educate developers, students, and security enthusiasts on foundational cryptography concepts, common cryptographic failures, and corresponding mitigation strategies.
 
 ## Table of Contents
@@ -12,6 +15,9 @@ An interactive, responsive single-page web application designed to educate devel
 - **Interactive Cryptography Overview**: Visual guide comparing **Symmetric** (single key) vs. **Asymmetric** (public/private key pair) encryption with simple, clean flow diagrams.
 - **Interactive Visualizers**: Includes interactive folder elements where you can hover to reveal plaintext contents turning into ciphertext.
 - **Vulnerability Catalog**: A comprehensive collection of cryptographic weaknesses and vulnerabilities based on common real-world CVEs and CWEs.
+
+![Content 1](screenshots/content_1.png)
+![Content 2](screenshots/content_2.png)
   
 ## Technologies Used
 
