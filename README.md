@@ -1,5 +1,4 @@
-# Cryptographic Failure Reference & Educational Guide
-
+# Cryptographic Failure Education tool 2003
 An interactive, responsive single-page web application designed to educate developers, students, and security enthusiasts on foundational cryptography concepts, common cryptographic failures, and corresponding mitigation strategies.
 
 ## Table of Contents
