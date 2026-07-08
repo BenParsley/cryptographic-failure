@@ -3,11 +3,8 @@ An interactive, responsive single-page web application designed to educate devel
 
 ## Table of Contents
 - [Features](#features)
-- [Vulnerabilities Explained](#vulnerabilities-explained)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [File Structure](#file-structure)
-- [Author](#author)
 - [License](#license)
 
 ## Features
