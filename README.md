@@ -23,9 +23,8 @@ An interactive, responsive single-page web application designed to educate devel
 
 ## Getting Started
 
-Since this is a client-side static web application, there are no database or backend servers to configure. You can run it instantly.
+Since this is a client-side static web application, there are no database or backend servers to configure. 
 
-### Option 1: Direct Open
 1. Clone this repository to your local machine:
    ```bash
    git clone https://github.com/yourusername/cryptographic-failure.git
