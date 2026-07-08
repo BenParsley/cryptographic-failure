@@ -15,11 +15,12 @@ An interactive, responsive single-page web application designed to educate devel
   
 ## Technologies Used
 
-- **HTML5 & CSS3**: Core semantic structure and layout styling.
-- **Bootstrap 5**: Responsive layout framework, navigation components, and modal interfaces.
-- **jQuery**: Simple event delegation, modal logic triggering, and DOM traversal.
-- **Font Awesome**: Modern vector icons for buttons and lists.
-- **Vanilla JavaScript**: SPA router, IntersectionObserver animations, glossary tooltips, custom scroll behaviors, and static authentication simulation.
+- **HTML5** 
+- **CSS3** 
+- **Vanilla JavaScript**
+- **Bootstrap 5**
+- **jQuery**
+- **Font Awesome**
 
 ## Getting Started
 
