@@ -16,7 +16,7 @@ An interactive, responsive single-page web application designed to educate devel
 - **Interactive Cryptography Overview**: Visual guide comparing **Symmetric** (single key) vs. **Asymmetric** (public/private key pair) encryption with simple, clean flow diagrams.
 - **Interactive Visualizers**: Includes interactive folder elements where you can hover to reveal plaintext contents turning into ciphertext.
 - **Vulnerability Catalog**: A comprehensive collection of cryptographic weaknesses and vulnerabilities based on common real-world CVEs and CWEs.
-- 
+  
 ## Technologies Used
 
 - **HTML5 & CSS3**: Core semantic structure and layout styling.
