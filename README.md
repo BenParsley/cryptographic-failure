@@ -1,4 +1,4 @@
-# Cryptographic Failure Education Tool 2023
+# Cryptographic Failure 
 
 ![Splash Screen](screenshots/Splashscreen.png)
 
