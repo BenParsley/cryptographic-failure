@@ -1,4 +1,4 @@
-# Cryptographic Failure Education tool 2023
+# Cryptographic Failure Education Tool 2023
 An interactive, responsive single-page web application designed to educate developers, students, and security enthusiasts on foundational cryptography concepts, common cryptographic failures, and corresponding mitigation strategies.
 
 ## Table of Contents
