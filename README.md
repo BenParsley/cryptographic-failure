@@ -7,6 +7,7 @@ This was a previously hosted website that helped explains what Cryptogrpahic Fai
 
 ## Table of Contents
 - [Features](#features)
+- [Visual Previews](#visual-previews)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [License](#license)
