@@ -36,7 +36,7 @@ Below are screenshots showing the application's key educational interfaces:
 - **jQuery**
 
 ## Additional Technologies that were later deprecated
-- Originally the utilziity had login functionality but that has since been removed after all PHP was wiped and replaced with base HTML 
+Originally the utilziity had login functionality but that has since been removed after all PHP was wiped and replaced with base HTML 
 - **Heroku**
 - **ClearDB** 
 
