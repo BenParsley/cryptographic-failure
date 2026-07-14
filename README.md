@@ -1,9 +1,7 @@
-# Cryptographic Failure Education Tool 2023
+# [ARCHIVED] What is? Cryptographic Failure 
 
 ![Application Splash Screen](screenshots/Splashscreen.png)
 *Figure 1: The application's welcoming splash screen, which introduces the user to the foundational question: "What is Cryptography?"*
-
-An interactive, responsive single-page web application designed to educate developers, students, and security enthusiasts on foundational cryptography concepts, common cryptographic failures, and corresponding mitigation strategies.
 
 ## Table of Contents
 - [Features](#features)
@@ -17,7 +15,7 @@ An interactive, responsive single-page web application designed to educate devel
 - **Interactive Visualizers**: Includes interactive folder elements where you can hover to reveal plaintext contents turning into ciphertext.
 - **Vulnerability Catalog**: A comprehensive collection of cryptographic weaknesses and vulnerabilities based on common real-world CVEs and CWEs.
 
-### Visual Previews
+## Visual Previews
 
 Below are screenshots showing the application's key educational interfaces:
 
