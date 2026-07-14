@@ -1,5 +1,7 @@
 # [ARCHIVED] What is? Cryptographic Failure 
 
+This was a previously hosted website that helped explains what Cryptogrpahic Failure is, the most common CVEs as per OWASP 2022
+
 ![Application Splash Screen](screenshots/Splashscreen.png)
 *Figure 1: The application's welcoming splash screen, which introduces the user to the foundational question: "What is Cryptography?"*
 
