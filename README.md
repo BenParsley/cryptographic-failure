@@ -2,14 +2,6 @@
 
 This was a previously hosted website that helped explains what Cryptogrpahic Failure is and the most common CVEs as per OWASP 2022 descriptions.
 
-## Technologies Used
-- **HTML5** 
-- **CSS3** 
-- **Vanilla JavaScript**
-- **Bootstrap 5**
-- **jQuery**
-- **Font Awesome**
-
 ![Application Splash Screen](screenshots/Splashscreen.png)
 *Figure 1: The application's welcoming splash screen, which introduces the user to the foundational question: "What is Cryptography?"*
 
@@ -34,6 +26,14 @@ Below are screenshots showing the application's key educational interfaces:
 
 ![Cryptographic Vulnerability Catalog Grid](screenshots/content_2.png)
 *Figure 3: The Vulnerability Catalog view, featuring an interactive grid of common cryptographic failures based on real-world CVEs and CWEs.*
+
+## Technologies Used
+- **HTML5** 
+- **CSS3** 
+- **Vanilla JavaScript**
+- **Bootstrap 5**
+- **jQuery**
+- **Font Awesome**
 
 ## Getting Started
 
